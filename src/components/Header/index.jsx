@@ -15,6 +15,8 @@ import {
 const Header = ({ home, about, experience, person, contact }) => {
   const [openMenu, setOpenMenu] = useState(false);
 
+  console.log("terste", openMenu);
+
   return (
     <Container>
       <AreaLogo>
@@ -70,14 +72,22 @@ const Header = ({ home, about, experience, person, contact }) => {
           <AreaButtonsResponsive>
             <Button>
               <ButtonText>
-                <a style={{ color: "white" }} href={home}>
+                <a
+                  onClick={() => setOpenMenu(false)}
+                  style={{ color: "white" }}
+                  href={home}
+                >
                   Home
                 </a>
               </ButtonText>
             </Button>
             <Button>
               <ButtonText>
-                <a style={{ color: "white" }} href={about}>
+                <a
+                  onClick={() => setOpenMenu(false)}
+                  style={{ color: "white" }}
+                  href={about}
+                >
                   Sobre
                 </a>
               </ButtonText>
@@ -85,7 +95,11 @@ const Header = ({ home, about, experience, person, contact }) => {
             <Button>
               {" "}
               <ButtonText>
-                <a style={{ color: "white" }} href={experience}>
+                <a
+                  onClick={() => setOpenMenu(false)}
+                  style={{ color: "white" }}
+                  href={experience}
+                >
                   Experiência
                 </a>
               </ButtonText>
@@ -93,14 +107,22 @@ const Header = ({ home, about, experience, person, contact }) => {
             <Button>
               {" "}
               <ButtonText>
-                <a style={{ color: "white" }} href={person}>
+                <a
+                  onClick={() => setOpenMenu(false)}
+                  style={{ color: "white" }}
+                  href={person}
+                >
                   Pessoal
                 </a>
               </ButtonText>
             </Button>
             <Button>
               <ButtonText>
-                <a style={{ color: "white" }} href={contact}>
+                <a
+                  onClick={() => setOpenMenu(false)}
+                  style={{ color: "white" }}
+                  href={contact}
+                >
                   Contato
                 </a>
               </ButtonText>
