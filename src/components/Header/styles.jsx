@@ -2,19 +2,24 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100vw;
-  /* backdrop-filter: blur(10px); */
+
   background: rgb(0, 0, 0);
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 1) 30%,
     rgba(0, 0, 0, 0) 100%
   );
-  height: 150px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   flex-direction: row;
+
+  @media (max-width: 500px) {
+    display: grid;
+    z-index: 10;
+  }
 `;
 
 export const AreaLogo = styled.div`
@@ -28,6 +33,23 @@ export const AreaButtons = styled.div`
   width: 800px;
   align-items: center;
   display: flex;
+  margin-top: 10px;
+  @media (max-width: 800px) {
+    width: 300px;
+    justify-content: center;
+    margin-right: 120px;
+  }
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+`;
+
+export const AreaButtonsResponsive = styled.div`
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  height: 80%;
 `;
 
 export const Button = styled.div`
@@ -46,5 +68,33 @@ export const ButtonText = styled.span`
     color: #6959cd;
     cursor: pointer;
     transition: all 0.2s;
+  }
+`;
+
+export const AreaMenu = styled.div`
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  /* background-color: red; */
+
+  @media (min-width: 500px) {
+    display: none;
+  }
+`;
+
+export const BarHambuguerMenu = styled.div`
+  height: 7px;
+  background-color: #6959cd;
+  margin-bottom: 10px;
+`;
+
+export const MenuHambuguerArea = styled.div`
+  width: 60px;
+  height: 50px;
+  display: grid;
+  display: none;
+
+  @media (max-width: 500px) {
+    display: inline;
   }
 `;

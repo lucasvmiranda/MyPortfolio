@@ -40,7 +40,7 @@ export const MyName = styled.p`
   color: #6959cd;
 
   @media (max-width: 1300px) {
-    font-size: 60px;
+    font-size: 40px;
   }
 `;
 export const SubTitle = styled.p`
@@ -65,7 +65,7 @@ export const InitArea = styled.div`
     padding-top: 0px;
 
     display: grid;
-    margin-bottom: 800px;
+    margin-bottom: 400px;
   }
 `;
 
@@ -88,27 +88,19 @@ export const MyPhotoContainer = styled.div`
   background-size: cover;
   margin-top: 200px;
 
-  @media (max-width: 1300px) {
-    height: 500px;
-    width: 400px;
-    align-content: center;
+  @media (max-width: 900px) {
     display: none;
-    box-shadow: 0px;
   }
 `;
 
 export const MyPhotoResponsive = styled.div`
-  background-image: url(${MyPhoto2});
-  height: 500px;
-  width: 400px;
-  align-content: center;
-  display: grid;
-  margin-top: 200px;
+  background-image: url(${MyPhoto});
 
-  display: none;
-
-  @media (max-width: 1300px) {
-    display: inline;
+  @media (max-width: 900px) {
+    border-radius: 90px;
+    width: 300px;
+    height: 300px;
+    padding: 40px;
   }
 `;
 
@@ -126,7 +118,7 @@ export const AboutArea = styled.div`
   margin-top: 240px;
 
   @media (max-width: 600px) {
-    margin-bottom: 200px;
+    margin-bottom: 20px;
   }
 `;
 

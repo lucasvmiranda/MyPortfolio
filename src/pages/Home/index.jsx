@@ -55,8 +55,14 @@ const Home = () => {
     <>
       <Container>
         <ContainerBackground>
-          <Header />
-          <Content>
+          <Header
+            home="#home"
+            about="#about"
+            experience="#experience"
+            person="#person"
+            contact="#contact"
+          />
+          <Content id="home">
             <InitArea>
               <MyPhotoContainer />
               <MyPhotoResponsive />
@@ -78,7 +84,7 @@ const Home = () => {
               </ContainertextInit>
             </InitArea>
             <AboutArea>
-              <AreaTitle>
+              <AreaTitle id="about">
                 <Title>TECNOLOGIAS</Title>
               </AreaTitle>
 
@@ -140,11 +146,13 @@ const Home = () => {
               </Description>
             </AboutArea>
             <ExperiencesArea>
-              <AreaTitle style={{ flexDirection: "row" }}>
-                <Title style={{ fontSize: 60 }}>EXPERIÊNCIAS</Title>
+              <AreaTitle style={{ flexDirection: "row", marginTop: 100 }}>
+                <Title id="experience" style={{ fontSize: 55 }}>
+                  EXPERIÊNCIAS
+                </Title>
               </AreaTitle>
               <Description>
-                <VerticalTimeline>
+                <VerticalTimeline style={{ position: "relative", zIndex: 1 }}>
                   <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: "#6959CD", color: "#fff" }}
@@ -201,9 +209,10 @@ const Home = () => {
                 </VerticalTimeline>
               </Description>
             </ExperiencesArea>
+
             <Profile>
               <AreaTitle>
-                <Title>PERFIL PESSOAL</Title>
+                <Title id="person">PERFIL PESSOAL</Title>
               </AreaTitle>
               <Description>
                 Nascido em São Paulo, apaixonado por tecnologia desde sempre,
@@ -217,7 +226,9 @@ const Home = () => {
             </Profile>
 
             <AreaTitle style={{ flexDirection: "row" }}>
-              <Title style={{ fontSize: 60 }}>CONTATO</Title>
+              <Title id="contact" style={{ fontSize: 55 }}>
+                CONTATO
+              </Title>
             </AreaTitle>
             <Contact>
               <Description style={{ display: "flex", alignItems: "center" }}>
