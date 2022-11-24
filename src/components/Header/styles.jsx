@@ -15,13 +15,12 @@ export const Container = styled.div`
   position: fixed;
   flex-direction: row;
   z-index: 10;
-  
+
   @media (max-width: 500px) {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     backdrop-filter: blur(10px);
-
   }
 `;
 
@@ -78,8 +77,6 @@ export const AreaMenu = styled.div`
   width: 100vw;
   height: 100vh;
 
-
-
   @media (min-width: 500px) {
     display: none;
   }
@@ -89,7 +86,6 @@ export const BarHambuguerMenu = styled.div`
   height: 7px;
   background-color: #6959cd;
   margin-bottom: 10px;
-
 `;
 
 export const MenuHambuguerArea = styled.div`
@@ -99,12 +95,9 @@ export const MenuHambuguerArea = styled.div`
   display: none;
   padding: 15px;
 
-
-
   @media (max-width: 500px) {
     display: inline;
     margin-top: 10px;
-
   }
 `;
 

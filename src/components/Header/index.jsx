@@ -53,7 +53,7 @@ const Header = ({ home, about, experience, person, contact }) => {
           </ButtonText>
         </Button>
       </AreaButtons>
-      
+
       {openMenu === true ? (
         <AreaMenu>
           <AreaButtonsResponsive>
