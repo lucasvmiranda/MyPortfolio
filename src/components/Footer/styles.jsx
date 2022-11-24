@@ -11,5 +11,5 @@ export const Container = styled.div`
 `;
 
 export const TextFooter = styled.div`
-  color: #c6c6c6;
+  color: #c6c6c65b;
 `;

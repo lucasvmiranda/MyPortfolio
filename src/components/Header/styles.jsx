@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100vw;
-
   background: rgb(0, 0, 0);
   background: linear-gradient(
     180deg,
@@ -16,8 +15,13 @@ export const Container = styled.div`
   position: fixed;
   flex-direction: row;
   z-index: 10;
+  
   @media (max-width: 500px) {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    backdrop-filter: blur(10px);
+
   }
 `;
 
@@ -73,8 +77,8 @@ export const ButtonText = styled.span`
 export const AreaMenu = styled.div`
   width: 100vw;
   height: 100vh;
-  backdrop-filter: blur(10px);
-  /* background-color: red; */
+
+
 
   @media (min-width: 500px) {
     display: none;
@@ -85,6 +89,7 @@ export const BarHambuguerMenu = styled.div`
   height: 7px;
   background-color: #6959cd;
   margin-bottom: 10px;
+
 `;
 
 export const MenuHambuguerArea = styled.div`
@@ -92,9 +97,14 @@ export const MenuHambuguerArea = styled.div`
   height: 50px;
   display: grid;
   display: none;
+  padding: 15px;
+
+
 
   @media (max-width: 500px) {
     display: inline;
+    margin-top: 10px;
+
   }
 `;
 

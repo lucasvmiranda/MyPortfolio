@@ -53,11 +53,7 @@ const Header = ({ home, about, experience, person, contact }) => {
           </ButtonText>
         </Button>
       </AreaButtons>
-      <MenuHambuguerArea onClick={() => setOpenMenu(!openMenu)}>
-        <BarHambuguerMenu />
-        <BarHambuguerMenu />
-        <BarHambuguerMenu />
-      </MenuHambuguerArea>
+      
       {openMenu === true ? (
         <AreaMenu>
           <AreaButtonsResponsive>
@@ -123,6 +119,11 @@ const Header = ({ home, about, experience, person, contact }) => {
       ) : (
         ""
       )}
+      <MenuHambuguerArea onClick={() => setOpenMenu(!openMenu)}>
+        <BarHambuguerMenu />
+        <BarHambuguerMenu />
+        <BarHambuguerMenu />
+      </MenuHambuguerArea>
     </Container>
   );
 };
