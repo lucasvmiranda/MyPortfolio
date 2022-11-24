@@ -117,6 +117,10 @@ export const AboutArea = styled.div`
   align-items: center;
   margin-top: 240px;
 
+  @media (max-width: 1300px) {
+    padding: 15px;
+  }
+
   @media (max-width: 600px) {
     margin-bottom: 20px;
   }
@@ -132,6 +136,7 @@ export const AreaCards = styled.div`
   @media (max-width: 1300px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 `;
 
@@ -166,6 +171,10 @@ export const ExperiencesArea = styled.div`
   /* background-color: green;   */
   align-items: center;
   margin-top: 40px;
+
+  @media (max-width: 1300px) {
+    padding: 15px;
+  }
 `;
 
 export const Profile = styled.div`
@@ -177,6 +186,10 @@ export const Profile = styled.div`
   @media (max-width: 600px) {
     margin-bottom: 200px;
   }
+
+  @media (max-width: 1300px) {
+    padding: 15px;
+  }
 `;
 
 export const Contact = styled.div`
@@ -187,6 +200,10 @@ export const Contact = styled.div`
   display: grid;
   margin-top: 20px;
   margin-bottom: 40px;
+
+  @media (max-width: 1300px) {
+    padding: 15px;
+  }
 `;
 
 export const Description = styled.p`

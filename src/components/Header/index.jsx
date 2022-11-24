@@ -10,6 +10,7 @@ import {
   AreaButtonsResponsive,
   BarHambuguerMenu,
   MenuHambuguerArea,
+  Redirect,
 } from "./styles";
 
 const Header = ({ home, about, experience, person, contact }) => {
@@ -26,39 +27,29 @@ const Header = ({ home, about, experience, person, contact }) => {
       <AreaButtons>
         <Button>
           <ButtonText>
-            <a style={{ color: "white" }} href={home}>
-              Home
-            </a>
+            <Redirect href={home}>Home</Redirect>
           </ButtonText>
         </Button>
         <Button>
           <ButtonText>
-            <a style={{ color: "white" }} href={about}>
-              Sobre
-            </a>
+            <Redirect href={about}>Sobre</Redirect>
           </ButtonText>
         </Button>
         <Button>
           {" "}
           <ButtonText>
-            <a style={{ color: "white" }} href={experience}>
-              Experiência
-            </a>
+            <Redirect href={experience}>Experiência</Redirect>
           </ButtonText>
         </Button>
         <Button>
           {" "}
           <ButtonText>
-            <a style={{ color: "white" }} href={person}>
-              Pessoal
-            </a>
+            <Redirect href={person}>Pessoal</Redirect>
           </ButtonText>
         </Button>
         <Button>
           <ButtonText>
-            <a style={{ color: "white" }} href={contact}>
-              Contato
-            </a>
+            <Redirect href={contact}>Contato</Redirect>
           </ButtonText>
         </Button>
       </AreaButtons>

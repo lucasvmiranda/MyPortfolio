@@ -15,10 +15,9 @@ export const Container = styled.div`
   justify-content: space-between;
   position: fixed;
   flex-direction: row;
-
+  z-index: 10;
   @media (max-width: 500px) {
     display: grid;
-    z-index: 10;
   }
 `;
 
@@ -97,4 +96,8 @@ export const MenuHambuguerArea = styled.div`
   @media (max-width: 500px) {
     display: inline;
   }
+`;
+
+export const Redirect = styled.a`
+  color: white;
 `;

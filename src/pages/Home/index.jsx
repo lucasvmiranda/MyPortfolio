@@ -69,7 +69,7 @@ const Home = () => {
               <ContainertextInit>
                 <Title>Olá, sou o </Title>
                 <MyName>Lucas Vinicius</MyName>
-                <SubTitle>Full-Stack Developer</SubTitle>
+                <SubTitle>Developer</SubTitle>
                 <a
                   target="_blank"
                   href="https://www.linkedin.com/in/lucasvmiranda/"
@@ -167,7 +167,7 @@ const Home = () => {
                       Octonus Cloud Solutions
                     </h3>
                     <h4 className="vertical-timeline-element-subtitle">
-                      Remoto
+                      Desenvolvedor Front-end - Remoto
                     </h4>
                     <p>Aplicação Web com React, Redux e Redux Saga.</p>
                   </VerticalTimelineElement>
@@ -182,7 +182,7 @@ const Home = () => {
                       SoftMakersBR{" "}
                     </h3>
                     <h4 className="vertical-timeline-element-subtitle">
-                      Remoto
+                      Desenvolvedor Full-Stack - Remoto
                     </h4>
                     <p>
                       Aplicação Web com React.js, aplicação Mobile com React
@@ -214,7 +214,7 @@ const Home = () => {
               <AreaTitle>
                 <Title id="person">PERFIL PESSOAL</Title>
               </AreaTitle>
-              <Description>
+              <Description style={{ textAlign: "justify" }}>
                 Nascido em São Paulo, apaixonado por tecnologia desde sempre,
                 carros dos anos 90 e músicas emo, uma pessoa bem nostalgica
                 diria, no meu tempo livre, gosto de estar perto de amigos e da
