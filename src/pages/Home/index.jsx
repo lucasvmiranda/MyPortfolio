@@ -45,6 +45,9 @@ import {
   Contact,
   MyName,
   MyPhotoResponsive,
+  ContainerLinks,
+  BarGreen,
+  HomeArea,
 } from "./styles";
 import Header from "../../components/Header";
 import Whatsapp from "../../components/Whatsapp";
@@ -54,6 +57,7 @@ const Home = () => {
   return (
     <>
       <Container>
+      <BarGreen/>
         <ContainerBackground>
           <Header
             home="#home"
@@ -62,14 +66,21 @@ const Home = () => {
             person="#person"
             contact="#contact"
           />
+          
           <Content id="home">
+    
+   
             <InitArea>
+           
               <MyPhotoContainer />
               <MyPhotoResponsive />
               <ContainertextInit>
+           
                 <Title>Olá, sou o </Title>
-                <MyName>Lucas Vinicius</MyName>
-                <SubTitle>Developer</SubTitle>
+                <MyName>Lucas Miranda</MyName>
+                {/* <SubTitle>Developer</SubTitle> */}
+<ContainerLinks>
+
                 <a
                   target="_blank"
                   href="https://www.linkedin.com/in/lucasvmiranda/"
@@ -81,11 +92,13 @@ const Home = () => {
                   {" "}
                   <FaGithubSquare size={55} />
                 </a>
+                </ContainerLinks>
               </ContainertextInit>
             </InitArea>
-            <AboutArea>
-              <AreaTitle id="about">
-                <Title>TECNOLOGIAS</Title>
+          
+            <AboutArea >
+              <AreaTitle  id="about">
+                <Title >TECNOLOGIAS</Title>
               </AreaTitle>
 
               <Description

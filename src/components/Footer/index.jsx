@@ -4,7 +4,7 @@ import { Container, TextFooter } from "./styles";
 const Footer = () => {
   return (
     <Container>
-      <TextFooter>Lucas Vinicius Miranda de Oliveira</TextFooter>
+      <TextFooter>Lucas Vinicius Miranda de Oliveira - 2023</TextFooter>
     </Container>
   );
 };

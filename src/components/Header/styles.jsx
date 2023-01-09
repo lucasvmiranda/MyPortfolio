@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100vw;
-  background: rgb(0, 0, 0);
+height: 120px;
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 1) 30%,
+    #202020 30%,
     rgba(0, 0, 0, 0) 100%
   );
 
@@ -32,10 +32,11 @@ export const AreaLogo = styled.div`
 `;
 
 export const AreaButtons = styled.div`
-  width: 800px;
+  width: 700px;
   align-items: center;
   display: flex;
   margin-top: 10px;
+  margin-right: 100px;
   @media (max-width: 800px) {
     width: 300px;
     justify-content: center;
@@ -55,11 +56,11 @@ export const AreaButtonsResponsive = styled.div`
 `;
 
 export const Button = styled.div`
-  width: 140px;
+  width: 100px;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   justify-content: center;
-  color: white;
+  color: #8DEA91;
   display: flex;
 `;
 
@@ -102,5 +103,5 @@ export const MenuHambuguerArea = styled.div`
 `;
 
 export const Redirect = styled.a`
-  color: white;
+  color: #8DEA91;
 `;

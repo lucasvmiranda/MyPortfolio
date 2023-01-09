@@ -1,44 +1,38 @@
 import styled from "styled-components";
 import background from "../../assets/images/background.jpg";
 import MyPhoto from "../../assets/images/photo4.png";
-import MyPhoto2 from "../../assets/images/photo2.png";
+import MyPhoto2 from "../../assets/images/photo9.png";
 
 export const Container = styled.div`
-  background: url(${background});
+  /* background: url(${background}); */
   width: 100%;
   height: 100%;
 `;
 
 export const ContainerBackground = styled.div`
-  background: rgb(35, 35, 54);
-  background: linear-gradient(
-    90deg,
-    rgba(35, 20, 60, 0.8) 0%,
-    rgba(0, 0, 0, 0.9) 30%
-  );
+  background: #202020;
 `;
 
 export const Content = styled.div`
   max-width: 1250px;
-
-  /* background-color: #c6c6c6; */
   margin-left: auto;
   margin-right: auto;
 `;
 
 export const Title = styled.p`
-  font-size: 40px;
-  color: #989898;
-
+  font-size: 30px;
+  color: #37B1F3;
+  position: absolute;
   @media (max-width: 600px) {
     font-size: 30px;
   }
 `;
 
 export const MyName = styled.p`
-  font-size: 80px;
-  color: #6959cd;
-
+  font-size: 90px;
+  color: white;
+position: absolute;
+font-weight: bold;
   @media (max-width: 1300px) {
     font-size: 40px;
   }
@@ -46,7 +40,7 @@ export const MyName = styled.p`
 export const SubTitle = styled.p`
   font-size: 40px;
   color: white;
-
+  /* position: absolute; */
   @media (max-width: 600px) {
     font-size: 30px;
   }
@@ -56,14 +50,13 @@ export const InitArea = styled.div`
   height: 600px;
   display: flex;
   flex-direction: row-reverse;
-  /* background-color: green; */
   align-items: center;
   padding-top: 120px;
+  position: relative;
 
   @media (max-width: 900px) {
     height: 300px;
     padding-top: 0px;
-
     display: grid;
     margin-bottom: 400px;
   }
@@ -71,27 +64,42 @@ export const InitArea = styled.div`
 
 export const ContainertextInit = styled.div`
   width: 680px;
+  height: 100%;
   margin-top: 120px;
-  line-height: 0px;
   justify-content: center;
-
   @media (max-width: 600px) {
     width: 100vw;
   }
 `;
 
 export const MyPhotoContainer = styled.div`
-  background-image: url(${MyPhoto});
-  width: 800px;
-  height: 800px;
-  box-shadow: 0 0 100px 60px black inset;
+  background-image: url(${MyPhoto2});
+  width: 1500px;
+  height: 750px;
   background-size: cover;
-  margin-top: 200px;
+  margin-top: 290px;
 
   @media (max-width: 900px) {
     display: none;
   }
 `;
+
+export const HomeArea = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+
+`;
+
+export const BarGreen = styled.div`
+  width: 1900px;
+  height: 450px;
+  margin-top: 450px;
+  margin-left: -150px;
+  position: absolute;
+  transform: rotate(-20deg);
+  background-color: #8DEA91;
+`
 
 export const MyPhotoResponsive = styled.div`
   background-image: url(${MyPhoto});
@@ -107,7 +115,7 @@ export const MyPhotoResponsive = styled.div`
 export const AreaTitle = styled.div`
   width: auto;
   display: flex;
-
+  margin-bottom: 80px;
   flex-direction: row-reverse;
 `;
 
@@ -115,7 +123,7 @@ export const AboutArea = styled.div`
   height: 500px;
   width: auto;
   align-items: center;
-  margin-top: 240px;
+  margin-top: 400px;
 
   @media (max-width: 1300px) {
     padding: 15px;
@@ -126,6 +134,14 @@ export const AboutArea = styled.div`
   }
 `;
 
+
+
+export const ContainerLinks = styled.div`
+  height: 200px;
+  width: auto;
+  align-items: center;
+  margin-top: 240px;
+`;
 export const AreaCards = styled.div`
   width: auto;
   height: auto;
