@@ -103,5 +103,5 @@ export const MenuHambuguerArea = styled.div`
 `;
 
 export const Redirect = styled.a`
-  color: #8DEA91;
+  color: white;
 `;

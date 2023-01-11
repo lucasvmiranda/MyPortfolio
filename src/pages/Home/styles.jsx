@@ -4,7 +4,6 @@ import MyPhoto from "../../assets/images/photo4.png";
 import MyPhoto2 from "../../assets/images/photo9.png";
 
 export const Container = styled.div`
-  /* background: url(${background}); */
   width: 100%;
   height: 100%;
 `;
@@ -23,35 +22,54 @@ export const Title = styled.p`
   font-size: 30px;
   color: #37B1F3;
   position: absolute;
+
   @media (max-width: 600px) {
     font-size: 30px;
   }
+
 `;
 
 export const MyName = styled.p`
   font-size: 90px;
   color: white;
-position: absolute;
-font-weight: bold;
+  position: absolute;
+  font-weight: bold;
+
   @media (max-width: 1300px) {
     font-size: 40px;
   }
+
 `;
 export const SubTitle = styled.p`
-  font-size: 40px;
-  color: white;
-  /* position: absolute; */
+  font-size: 20px;
+  font-weight: 400px;
+  color: #afaaaa;
+  text-align: justify;
+  width: 650px;
+  margin-top: 80px;
+  height: auto;
+  margin-left: 500px;
+  align-items: center;
+
   @media (max-width: 600px) {
     font-size: 30px;
   }
+
 `;
+
+export const AreaDescription = styled.div`
+  height: 200px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 200px;
+  align-items: center;
+`
 
 export const InitArea = styled.div`
   height: 600px;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  padding-top: 120px;
   position: relative;
 
   @media (max-width: 900px) {
@@ -65,8 +83,9 @@ export const InitArea = styled.div`
 export const ContainertextInit = styled.div`
   width: 680px;
   height: 100%;
-  margin-top: 120px;
+  margin-top: 400px;
   justify-content: center;
+
   @media (max-width: 600px) {
     width: 100vw;
   }
@@ -74,42 +93,48 @@ export const ContainertextInit = styled.div`
 
 export const MyPhotoContainer = styled.div`
   background-image: url(${MyPhoto2});
-  width: 1500px;
-  height: 750px;
+  width: 1200px;
+  height:800px;
   background-size: cover;
   margin-top: 290px;
+  -webkit-box-shadow: 22px 43px 74px -4px rgba(18,18,20,0.5);
+  -moz-box-shadow: 22px 43px 74px -4px rgba(18,18,20,0.5);
+  box-shadow: 22px 43px 74px -4px rgba(18,18,20,0.5);
+  border-radius: 999px;
 
   @media (max-width: 900px) {
     display: none;
   }
+
 `;
 
 export const HomeArea = styled.div`
   width: 100%;
   height: 100%;
   background-color: blue;
-
 `;
 
 export const BarGreen = styled.div`
-  width: 1900px;
-  height: 450px;
+  width: 2000px;
+  height: 350px;
   margin-top: 450px;
   margin-left: -150px;
   position: absolute;
   transform: rotate(-20deg);
-  background-color: #8DEA91;
-`
+  background-color: #6959cd;
+`;
 
 export const MyPhotoResponsive = styled.div`
   background-image: url(${MyPhoto});
-
+  border-radius: 999px;
+ 
   @media (max-width: 900px) {
     border-radius: 90px;
     width: 300px;
     height: 300px;
     padding: 40px;
   }
+
 `;
 
 export const AreaTitle = styled.div`
@@ -120,10 +145,10 @@ export const AreaTitle = styled.div`
 `;
 
 export const AboutArea = styled.div`
-  height: 500px;
-  width: auto;
+  height: 350px;
   align-items: center;
-  margin-top: 400px;
+  justify-content: center;
+  background-color: #121214;
 
   @media (max-width: 1300px) {
     padding: 15px;
@@ -132,16 +157,16 @@ export const AboutArea = styled.div`
   @media (max-width: 600px) {
     margin-bottom: 20px;
   }
+
 `;
-
-
 
 export const ContainerLinks = styled.div`
   height: 200px;
   width: auto;
   align-items: center;
-  margin-top: 240px;
+  margin-top: 150px;
 `;
+
 export const AreaCards = styled.div`
   width: auto;
   height: auto;
@@ -184,13 +209,13 @@ export const TitleCard = styled.p`
 export const ExperiencesArea = styled.div`
   height: auto;
   width: auto;
-  /* background-color: green;   */
   align-items: center;
   margin-top: 40px;
 
   @media (max-width: 1300px) {
     padding: 15px;
   }
+
 `;
 
 export const Profile = styled.div`
@@ -220,6 +245,7 @@ export const Contact = styled.div`
   @media (max-width: 1300px) {
     padding: 15px;
   }
+  
 `;
 
 export const Description = styled.p`

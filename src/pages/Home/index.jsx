@@ -48,6 +48,7 @@ import {
   ContainerLinks,
   BarGreen,
   HomeArea,
+  AreaDescription
 } from "./styles";
 import Header from "../../components/Header";
 import Whatsapp from "../../components/Whatsapp";
@@ -67,20 +68,15 @@ const Home = () => {
             contact="#contact"
           />
           
-          <Content id="home">
     
-   
+          <Content>
             <InitArea>
-           
-              <MyPhotoContainer />
+              <MyPhotoContainer/>
               <MyPhotoResponsive />
               <ContainertextInit>
-           
                 <Title>Olá, sou o </Title>
                 <MyName>Lucas Miranda</MyName>
-                {/* <SubTitle>Developer</SubTitle> */}
 <ContainerLinks>
-
                 <a
                   target="_blank"
                   href="https://www.linkedin.com/in/lucasvmiranda/"
@@ -94,13 +90,23 @@ const Home = () => {
                 </a>
                 </ContainerLinks>
               </ContainertextInit>
-            </InitArea>
           
+            </InitArea>
+            </Content>
+            <AreaDescription>
+            <Content>
+            <SubTitle>    Apaixonado por tecnologia,
+               formado em Análise e Desenvolvimento de Sistemas, tenho facilidade em
+                trabalhar em equipe, pair programming e code review fazem parte
+                de meu cotidiano.</SubTitle>
+                </Content>
+                </AreaDescription>
+            
             <AboutArea >
+            <Content>
               <AreaTitle  id="about">
                 <Title >TECNOLOGIAS</Title>
               </AreaTitle>
-
               <Description
                 style={{ alignItems: "center", justifyContent: "center" }}
               >
@@ -157,7 +163,9 @@ const Home = () => {
                   </CardTecnhology>
                 </AreaCards>
               </Description>
+              </Content>
             </AboutArea>
+            <Content id="home">
             <ExperiencesArea>
               <AreaTitle style={{ flexDirection: "row", marginTop: 100 }}>
                 <Title id="experience" style={{ fontSize: 55 }}>
@@ -182,7 +190,7 @@ const Home = () => {
                     <h4 className="vertical-timeline-element-subtitle">
                       Desenvolvedor Front-end - Remoto
                     </h4>
-                    <p>Aplicação Web com React, Redux e Redux Saga.</p>
+                    <p>Aplicação Web com TypeScript, React, Styled-Componentes, Redux e Redux Saga.</p>
                   </VerticalTimelineElement>
                   <VerticalTimelineElement
                     className="vertical-timeline-element--work"
@@ -198,7 +206,7 @@ const Home = () => {
                       Desenvolvedor Full-Stack - Remoto
                     </h4>
                     <p>
-                      Aplicação Web com React.js, aplicação Mobile com React
+                      Aplicação Web com TypeScript,React.js, aplicação Mobile com React
                       Native, Back-end com Node.js e deploy de aplicações.
                     </p>
                   </VerticalTimelineElement>
