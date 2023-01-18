@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: rgb(25, 25, 25, 0.4);
+ background: rgb(105,89,205);
+background: linear-gradient(90deg, rgba(105,89,205,1) 43%, rgba(0,212,255,1) 100%);
   height: 80px;
   display: flex;
   align-items: center;
@@ -10,5 +11,5 @@ export const Container = styled.div`
 `;
 
 export const TextFooter = styled.div`
-  color: #c6c6c65b;
+  color: #202020;;
 `;

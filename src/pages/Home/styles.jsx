@@ -41,14 +41,14 @@ export const MyName = styled.p`
 
 `;
 export const SubTitle = styled.p`
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400px;
   color: #afaaaa;
   text-align: justify;
-  width: 650px;
+  width: 400px;
   margin-top: 80px;
   height: auto;
-  margin-left: 500px;
+ 
   align-items: center;
 
   @media (max-width: 600px) {
@@ -56,6 +56,8 @@ export const SubTitle = styled.p`
   }
 
 `;
+
+
 
 export const AreaDescription = styled.div`
   height: 200px;
@@ -121,7 +123,23 @@ export const BarGreen = styled.div`
   margin-left: -150px;
   position: absolute;
   transform: rotate(-20deg);
-  background-color: #6959cd;
+  background: rgb(105,89,205);
+background: linear-gradient(90deg, rgba(105,89,205,1) 43%, rgba(0,212,255,1) 100%);
+`;
+
+
+export const BarFooter = styled.div`
+  width: 1800px;
+  height: 150px;
+position: relative;
+  left:0;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column-reverse;
+opacity: 0.5;
+  transform: rotate(-170deg);
+  background: rgb(105,89,205);
+background: linear-gradient(90deg, rgba(105,89,205,1) 43%, rgba(0,212,255,1) 100%);
 `;
 
 export const MyPhotoResponsive = styled.div`

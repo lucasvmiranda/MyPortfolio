@@ -1,4 +1,5 @@
 import React from "react";
+import StarfieldAnimation from 'react-starfield-animation'
 
 import {
   FaDev,
@@ -56,8 +57,19 @@ import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
+    
     <>
+
+    
       <Container>
+      <StarfieldAnimation
+        style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%',
+          zIndex: 999,
+        }}
+      />
       <BarGreen/>
         <ContainerBackground>
           <Header
@@ -71,12 +83,20 @@ const Home = () => {
     
           <Content>
             <InitArea>
+              
               <MyPhotoContainer/>
               <MyPhotoResponsive />
+              
               <ContainertextInit>
                 <Title>Olá, sou o </Title>
                 <MyName>Lucas Miranda</MyName>
+                
 <ContainerLinks>
+
+    <SubTitle>    Apaixonado por tecnologia,
+               formado em Análise e Desenvolvimento de Sistemas, tenho facilidade em
+                trabalhar em equipe, pair programming e code review fazem parte
+                de meu cotidiano.</SubTitle>
                 <a
                   target="_blank"
                   href="https://www.linkedin.com/in/lucasvmiranda/"
@@ -95,10 +115,7 @@ const Home = () => {
             </Content>
             <AreaDescription>
             <Content>
-            <SubTitle>    Apaixonado por tecnologia,
-               formado em Análise e Desenvolvimento de Sistemas, tenho facilidade em
-                trabalhar em equipe, pair programming e code review fazem parte
-                de meu cotidiano.</SubTitle>
+          
                 </Content>
                 </AreaDescription>
             
@@ -230,9 +247,11 @@ const Home = () => {
                 </VerticalTimeline>
               </Description>
             </ExperiencesArea>
-
+        
             <Profile>
+              
               <AreaTitle>
+              
                 <Title id="person">PERFIL PESSOAL</Title>
               </AreaTitle>
               <Description style={{ textAlign: "justify" }}>
@@ -245,13 +264,13 @@ const Home = () => {
                 de meu cotidiano.
               </Description>
             </Profile>
-
             <AreaTitle style={{ flexDirection: "row" }}>
               <Title id="contact" style={{ fontSize: 55 }}>
                 CONTATO
               </Title>
             </AreaTitle>
             <Contact>
+              
               <Description style={{ display: "flex", alignItems: "center" }}>
                 <MdEmail size={40} style={{ marginRight: 10 }} />{" "}
                 lucasvmirandadev@gmail.com
