@@ -16,6 +16,29 @@ export const Content = styled.div`
   max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px;
+
+  @media (max-width: 900px) {
+
+    align-items: center;
+    display: grid;
+    width: 500px;
+  height:100%;
+  }
+
+   @media (max-width: 600px) {
+    width: 500px;
+
+  }
+
+   @media (max-width: 500px) {
+    width: 400px;
+
+  }
+  @media (max-width: 400px) {
+    width: 350px;
+
+  }
 `;
 
 export const Title = styled.p`
@@ -24,7 +47,7 @@ export const Title = styled.p`
   position: absolute;
 
   @media (max-width: 600px) {
-    font-size: 30px;
+    font-size: 20px;
   }
 
 `;
@@ -36,7 +59,12 @@ export const MyName = styled.p`
   font-weight: bold;
 
   @media (max-width: 1300px) {
-    font-size: 40px;
+    font-size: 70px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 50px;
+    margin-top: 80px;
   }
 
 `;
@@ -51,9 +79,21 @@ export const SubTitle = styled.p`
  
   align-items: center;
 
-  @media (max-width: 600px) {
-    font-size: 30px;
+    @media (max-width: 1800px) {
+   font-size: 15px;
   }
+
+  @media (max-width: 1100px) {
+   font-size: 15px;
+ 
+   width: 400px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 20px;
+    width: 300px;
+  }
+
 
 `;
 
@@ -104,8 +144,47 @@ export const MyPhotoContainer = styled.div`
   box-shadow: 22px 43px 74px -4px rgba(18,18,20,0.5);
   border-radius: 999px;
 
+  @media (max-width: 1300px) {
+    width: 600px;
+    height:550px;
+  }
+
+  @media (max-width: 1200px) {
+    width: 500px;
+    height:500px;
+  }
+
+  @media (max-width: 1150px) {
+    width: 500px;
+    height:450px;
+  }
+ 
+
+  @media (max-width: 1050px) {
+    width: 400px;
+    height:350px;
+  }
+
   @media (max-width: 900px) {
-    display: none;
+    margin-top: 90px;
+    align-items: center;
+    display: grid;
+    width: 500px;
+  height:500px;
+  }
+
+  @media (max-width: 500px) {
+    border-radius: 200px;
+    width: 400px;
+  height: 400px;
+  }
+
+  @media (max-width: 400px) {
+    align-items: center;
+    display: grid;
+  
+    width: 300px;
+  height: 300px;
   }
 
 `;
@@ -117,7 +196,7 @@ export const HomeArea = styled.div`
 `;
 
 export const BarGreen = styled.div`
-  width: 2000px;
+  width: 1400px;
   height: 350px;
   margin-top: 450px;
   margin-left: -150px;
@@ -125,6 +204,37 @@ export const BarGreen = styled.div`
   transform: rotate(-20deg);
   background: rgb(105,89,205);
 background: linear-gradient(90deg, rgba(105,89,205,1) 43%, rgba(0,212,255,1) 100%);
+
+@media (min-width: 1700px) {
+  width: 2000px;
+  }
+
+  @media (max-width: 1320px) {
+  width: 1300px;
+  }
+
+  @media (max-width: 1200px) {
+  width: 1200px;
+  }
+
+  @media (max-width: 1100px) {
+  width: 1000px;
+  margin-top: 500px;
+  }
+
+  @media (max-width: 900px) {
+  width: 800px;
+  }
+
+  @media (max-width: 720px) {
+  width: 600px;
+  
+  }
+
+  @media (max-width: 520px) {
+  width: 500px;
+  height: 150px;
+  }
 `;
 
 
@@ -142,18 +252,7 @@ opacity: 0.5;
 background: linear-gradient(90deg, rgba(105,89,205,1) 43%, rgba(0,212,255,1) 100%);
 `;
 
-export const MyPhotoResponsive = styled.div`
-  background-image: url(${MyPhoto});
-  border-radius: 999px;
- 
-  @media (max-width: 900px) {
-    border-radius: 90px;
-    width: 300px;
-    height: 300px;
-    padding: 40px;
-  }
 
-`;
 
 export const AreaTitle = styled.div`
   width: auto;
@@ -163,18 +262,18 @@ export const AreaTitle = styled.div`
 `;
 
 export const AboutArea = styled.div`
-  height: 350px;
+  height:100%;
   align-items: center;
   justify-content: center;
   background-color: #121214;
 
   @media (max-width: 1300px) {
     padding: 15px;
+    display: grid;
+   
   }
 
-  @media (max-width: 600px) {
-    margin-bottom: 20px;
-  }
+ 
 
 `;
 
@@ -213,6 +312,13 @@ export const CardTecnhology = styled.div`
 
   @media (max-width: 600px) {
     width: 195px;
+  }
+
+  @media (max-width: 500px) {
+    width: 160px;
+
+ 
+  
   }
 
   :hover {

@@ -1,131 +1,67 @@
 import React, { useState } from "react";
-import logo from "../../assets/images/logo.png";
-import {
-  Container,
-  AreaButtons,
-  AreaLogo,
-  ButtonText,
-  Button,
-  AreaMenu,
-  AreaButtonsResponsive,
-  BarHambuguerMenu,
-  MenuHambuguerArea,
-  Redirect,
-} from "./styles";
+import * as S from "./styles";
 
-const Header = ({ home, about, experience, person, contact }) => {
-  const [openMenu, setOpenMenu] = useState(false);
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineCloseSquare } from "react-icons/ai";
 
-  console.log("terste", openMenu);
+
+
+function Header() {
+  const [open, setOpen] = useState(false);
+
+
+  const Links = ({ margin }) => (
+    <>
+      <S.ButtonMenu style={{ marginTop: margin }}>
+        <a href="#home">Home</a>
+      </S.ButtonMenu>
+      <S.ButtonMenu style={{ marginTop: margin }}>
+        <a href="#about">Sobre</a>
+      </S.ButtonMenu>
+      <S.ButtonMenu style={{ marginTop: margin }}>
+        <a href="#experience">Experiência</a>
+      </S.ButtonMenu>
+      <S.ButtonMenu style={{ marginTop: margin }}>
+        <a href="#person">Pessoal</a>
+      </S.ButtonMenu>
+      <S.ButtonMenu style={{ marginTop: margin }}>
+        <a href="#contact">Contato</a>
+      </S.ButtonMenu>
+    </>
+  );
 
   return (
-    <Container>
-      <AreaLogo>
-        <img src={logo} style={{ display: "none" }} />
-      </AreaLogo>
+    <>
+      <S.Container>
+        <S.MenuHamburguerButton onClick={() => setOpen(!open)}>
+          <GiHamburgerMenu size={24} color="white" />
+        </S.MenuHamburguerButton>
+        <S.Content>
+          
 
-      <AreaButtons>
-        <Button>
-          <ButtonText>
-            <Redirect href={home}>Home</Redirect>
-          </ButtonText>
-        </Button>
-        <Button>
-          <ButtonText>
-            <Redirect href={about}>Sobre</Redirect>
-          </ButtonText>
-        </Button>
-        <Button>
-          {" "}
-          <ButtonText>
-            <Redirect href={experience}>Experiência</Redirect>
-          </ButtonText>
-        </Button>
-        <Button>
-          {" "}
-          <ButtonText>
-            <Redirect href={person}>Pessoal</Redirect>
-          </ButtonText>
-        </Button>
-        <Button>
-          <ButtonText>
-            <Redirect href={contact}>Contato</Redirect>
-          </ButtonText>
-        </Button>
-      </AreaButtons>
-
-      {openMenu === true ? (
-        <AreaMenu>
-          <AreaButtonsResponsive>
-            <Button>
-              <ButtonText>
-                <a
-                  onClick={() => setOpenMenu(false)}
-                  style={{ color: "white" }}
-                  href={home}
-                >
-                  Home
-                </a>
-              </ButtonText>
-            </Button>
-            <Button>
-              <ButtonText>
-                <a
-                  onClick={() => setOpenMenu(false)}
-                  style={{ color: "white" }}
-                  href={about}
-                >
-                  Sobre
-                </a>
-              </ButtonText>
-            </Button>
-            <Button>
-              {" "}
-              <ButtonText>
-                <a
-                  onClick={() => setOpenMenu(false)}
-                  style={{ color: "white" }}
-                  href={experience}
-                >
-                  Experiência
-                </a>
-              </ButtonText>
-            </Button>
-            <Button>
-              {" "}
-              <ButtonText>
-                <a
-                  onClick={() => setOpenMenu(false)}
-                  style={{ color: "white" }}
-                  href={person}
-                >
-                  Pessoal
-                </a>
-              </ButtonText>
-            </Button>
-            <Button>
-              <ButtonText>
-                <a
-                  onClick={() => setOpenMenu(false)}
-                  style={{ color: "white" }}
-                  href={contact}
-                >
-                  Contato
-                </a>
-              </ButtonText>
-            </Button>
-          </AreaButtonsResponsive>
-        </AreaMenu>
+          <S.AreaButtons>
+            <Links margin={0} />
+          </S.AreaButtons>
+       
+        </S.Content>
+      </S.Container>
+      {open ? (
+        <S.BackgroundSideMenu onClick={() => setOpen(!!false)}>
+          <S.SideMenu>
+            <S.CloseButtonMenu onClick={() => setOpen(!!false)}>
+              <AiOutlineCloseSquare size={24} color="white" />
+            </S.CloseButtonMenu>
+            <S.AreaButtonsHamburguerMenu>
+              <Links margin={20} />
+              
+            </S.AreaButtonsHamburguerMenu>
+          </S.SideMenu>
+        </S.BackgroundSideMenu>
       ) : (
-        ""
+        <></>
       )}
-      <MenuHambuguerArea onClick={() => setOpenMenu(!openMenu)}>
-        <BarHambuguerMenu />
-        <BarHambuguerMenu />
-        <BarHambuguerMenu />
-      </MenuHambuguerArea>
-    </Container>
+    </>
   );
-};
+}
 
 export default Header;

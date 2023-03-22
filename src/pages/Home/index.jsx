@@ -45,7 +45,7 @@ import {
   TitleCard,
   Contact,
   MyName,
-  MyPhotoResponsive,
+
   ContainerLinks,
   BarGreen,
   HomeArea,
@@ -62,6 +62,13 @@ const Home = () => {
 
     
       <Container>
+      <Header
+            home="#home"
+            about="#about"
+            experience="#experience"
+            person="#person"
+            contact="#contact"
+          />
       <StarfieldAnimation
         style={{
           position: 'absolute',
@@ -72,20 +79,14 @@ const Home = () => {
       />
       <BarGreen/>
         <ContainerBackground>
-          <Header
-            home="#home"
-            about="#about"
-            experience="#experience"
-            person="#person"
-            contact="#contact"
-          />
+         
           
     
           <Content>
             <InitArea>
               
               <MyPhotoContainer/>
-              <MyPhotoResponsive />
+             
               
               <ContainertextInit>
                 <Title>Olá, sou o </Title>
@@ -185,7 +186,7 @@ const Home = () => {
             <Content id="home">
             <ExperiencesArea>
               <AreaTitle style={{ flexDirection: "row", marginTop: 100 }}>
-                <Title id="experience" style={{ fontSize: 55 }}>
+                <Title id="experience" >
                   EXPERIÊNCIAS
                 </Title>
               </AreaTitle>
@@ -265,7 +266,7 @@ const Home = () => {
               </Description>
             </Profile>
             <AreaTitle style={{ flexDirection: "row" }}>
-              <Title id="contact" style={{ fontSize: 55 }}>
+              <Title id="contact" >
                 CONTATO
               </Title>
             </AreaTitle>

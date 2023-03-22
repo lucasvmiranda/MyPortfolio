@@ -1,107 +1,166 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { fadeIn } from "react-animations";
 
-export const Container = styled.div`
-  width: 100vw;
-height: 120px;
-  background: linear-gradient(
-    180deg,
-    #202020 30%,
-    rgba(0, 0, 0, 0) 100%
-  );
+const fadeAnimation = keyframes`${fadeIn}`;
+
+export const Container = styled.header`
+  background: linear-gradient(63deg, rgba(0,212,255,0.25253851540616246) 0%, rgba(105,89,205,1) 65%);
+  padding: 20px 0px;
+  align-items: center;  
 
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  flex-direction: row;
-  z-index: 10;
 
-  @media (max-width: 500px) {
+  justify-content: center;
+  position: fixed;
+  z-index: 9999999;
+  width: 100vw;
+
+  @media (max-width: 900px) {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    backdrop-filter: blur(10px);
+    flex-direction: row-reverse;
   }
 `;
 
-export const AreaLogo = styled.div`
-  height: 50px;
-  align-items: center;
-  justify-content: center;
+export const Content = styled.div`
+  width: 100vw;
+  max-width: 1250px;
   display: flex;
+  z-index: 99999;
+
+  justify-content: space-between;
+  flex-direction: row-reverse;;
 `;
 
 export const AreaButtons = styled.div`
-  width: 700px;
-  align-items: center;
-  display: flex;
-  margin-top: 10px;
-  margin-right: 100px;
-  @media (max-width: 800px) {
-    width: 300px;
-    justify-content: center;
-    margin-right: 120px;
-  }
+  width: 40%;
 
-  @media (max-width: 500px) {
+margin-right:50px;
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 830px) {
     display: none;
   }
 `;
 
-export const AreaButtonsResponsive = styled.div`
-  align-items: center;
-  justify-content: center;
+export const ButtonMenu = styled.div`
+  height: 20px;
+  font-size: 14px;
+  color: white;
+
   display: grid;
-  height: 80%;
-`;
-
-export const Button = styled.div`
-  width: 100px;
-  align-items: center;
-  padding: 20px;
   justify-content: center;
-  color: #8DEA91;
-  display: flex;
-`;
-
-export const ButtonText = styled.span`
-  font-size: 20px;
+  text-align: center;
 
   :hover {
-    color: #6959cd;
-    cursor: pointer;
-    transition: all 0.2s;
+    color: #dff5ff;
+    transition: all 0.5s linear;
+  }
+
+  @media (max-width: 970px) {
+    font-size: 12px;
+    height: 30px;
   }
 `;
 
-export const AreaMenu = styled.div`
-  width: 100vw;
-  height: 100vh;
+export const AreaHamburguer = styled.div`
+  height: 100%;
+  align-items: center;
+  display: grid;
+  padding: 0 15px 0 0;
+  justify-content: center;
 
-  @media (min-width: 500px) {
+  @media (min-width: 830px) {
     display: none;
   }
 `;
 
-export const BarHambuguerMenu = styled.div`
-  height: 7px;
-  background-color: #6959cd;
-  margin-bottom: 10px;
+export const AreaMenuHamburguer = styled.div`
+  width: 400px;
+  height: 600px;
 `;
 
-export const MenuHambuguerArea = styled.div`
-  width: 60px;
-  height: 50px;
-  display: grid;
-  display: none;
-  padding: 15px;
+export const SideMenu = styled.div`
+  width: 40%;
+  height: 100vh;
+  background-image: linear-gradient(
+    0deg,
+    rgba(16, 22, 47, 1) 4%,
+    rgba(32, 41, 78, 1)
+  );
+  position: absolute;
+  right: 0;
+  z-index: 999;
+  animation: 1s ${fadeAnimation};
 
-  @media (max-width: 500px) {
-    display: inline;
-    margin-top: 10px;
+  @media (min-width: 830px) {
+    display: none;
   }
 `;
 
-export const Redirect = styled.a`
-  color: white;
+export const BackgroundSideMenu = styled.div`
+  width: 100vw;
+  height: 100%;
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 99;
+  top: 0;
+
+  @media (min-width: 830px) {
+    display: none;
+  }
+`;
+
+export const MenuHamburguerButton = styled.div`
+  width: 50px;
+  height: 30px;
+  margin-left: 10px;
+  align-items: center;
+  display: grid;
+  cursor: pointer;
+
+  @media (min-width: 830px) {
+    display: none;
+  }
+`;
+
+export const CloseButtonMenu = styled.div`
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  position: absolute;
+`;
+
+export const AreaButtonsHamburguerMenu = styled.div`
+  width: 100%;
+  height: 70%;
+  padding: 20%;
+  margin-top: 30px;
+`;
+
+export const HideForResponsive = styled.div`
+  @media (max-width: 830px) {
+    display: none;
+  }
+`;
+
+export const Button = styled.a`
+  padding: 5px 20px;
+  background-color: white;
+  border: 1.9px solid #000 !important;
+  transition: all ease 0.2s;
+  color: #10162f;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  :hover {
+    box-shadow: #000 4.1px -3.6px 0px 1px;
+    scale: 1.04;
+    cursor: pointer;
+  }
 `;
