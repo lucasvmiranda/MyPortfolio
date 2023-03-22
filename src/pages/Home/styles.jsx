@@ -344,7 +344,7 @@ export const Profile = styled.div`
   margin-top: 40px;
 
   @media (max-width: 600px) {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     height: 400px;
     width: 90%;
   }
@@ -365,6 +365,10 @@ export const Contact = styled.div`
 
   @media (max-width: 1300px) {
     padding: 15px;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 0px;
   }
 `;
 
