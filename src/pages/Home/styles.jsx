@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import background from "../../assets/images/background.jpg";
-import MyPhoto from "../../assets/images/photo4.png";
 import MyPhoto2 from "../../assets/images/photo9.png";
 
 export const Container = styled.div`
@@ -19,37 +17,32 @@ export const Content = styled.div`
   padding: 10px;
 
   @media (max-width: 900px) {
-
     align-items: center;
     display: grid;
     width: 500px;
-  height:100%;
+    height: 100%;
   }
 
-   @media (max-width: 600px) {
+  @media (max-width: 600px) {
     width: 500px;
-
   }
 
-   @media (max-width: 500px) {
+  @media (max-width: 500px) {
     width: 400px;
-
   }
-  @media (max-width: 400px) {
-    width: 350px;
-
+  @media (max-width: 360px) {
+    max-width: 340px;
   }
 `;
 
 export const Title = styled.p`
   font-size: 30px;
-  color: #37B1F3;
+  color: #37b1f3;
   position: absolute;
 
   @media (max-width: 600px) {
     font-size: 20px;
   }
-
 `;
 
 export const MyName = styled.p`
@@ -66,7 +59,6 @@ export const MyName = styled.p`
     font-size: 50px;
     margin-top: 80px;
   }
-
 `;
 export const SubTitle = styled.p`
   font-size: 18px;
@@ -76,28 +68,26 @@ export const SubTitle = styled.p`
   width: 400px;
   margin-top: 80px;
   height: auto;
- 
   align-items: center;
 
-    @media (max-width: 1800px) {
-   font-size: 15px;
+  @media (max-width: 1800px) {
+    font-size: 15px;
   }
 
   @media (max-width: 1100px) {
-   font-size: 15px;
- 
-   width: 400px;
+    font-size: 15px;
   }
 
   @media (max-width: 600px) {
     font-size: 20px;
-    width: 300px;
+    width: 85vw;
   }
 
-
+  @media (max-width: 500px) {
+    font-size: 18px;
+    width: 85vw;
+  }
 `;
-
-
 
 export const AreaDescription = styled.div`
   height: 200px;
@@ -105,7 +95,7 @@ export const AreaDescription = styled.div`
   flex-direction: row-reverse;
   margin-top: 200px;
   align-items: center;
-`
+`;
 
 export const InitArea = styled.div`
   height: 600px;
@@ -130,39 +120,39 @@ export const ContainertextInit = styled.div`
 
   @media (max-width: 600px) {
     width: 100vw;
+    margin-top: 300px;
   }
 `;
 
 export const MyPhotoContainer = styled.div`
   background-image: url(${MyPhoto2});
   width: 1200px;
-  height:800px;
+  height: 800px;
   background-size: cover;
   margin-top: 290px;
-  -webkit-box-shadow: 22px 43px 74px -4px rgba(18,18,20,0.5);
-  -moz-box-shadow: 22px 43px 74px -4px rgba(18,18,20,0.5);
-  box-shadow: 22px 43px 74px -4px rgba(18,18,20,0.5);
+  -webkit-box-shadow: 22px 43px 74px -4px rgba(18, 18, 20, 0.5);
+  -moz-box-shadow: 22px 43px 74px -4px rgba(18, 18, 20, 0.5);
+  box-shadow: 22px 43px 74px -4px rgba(18, 18, 20, 0.5);
   border-radius: 999px;
 
   @media (max-width: 1300px) {
     width: 600px;
-    height:550px;
+    height: 550px;
   }
 
   @media (max-width: 1200px) {
     width: 500px;
-    height:500px;
+    height: 500px;
   }
 
   @media (max-width: 1150px) {
     width: 500px;
-    height:450px;
+    height: 450px;
   }
- 
 
   @media (max-width: 1050px) {
     width: 400px;
-    height:350px;
+    height: 350px;
   }
 
   @media (max-width: 900px) {
@@ -170,23 +160,24 @@ export const MyPhotoContainer = styled.div`
     align-items: center;
     display: grid;
     width: 500px;
-  height:500px;
+    height: 500px;
   }
 
   @media (max-width: 500px) {
     border-radius: 200px;
     width: 400px;
-  height: 400px;
+    height: 400px;
   }
 
   @media (max-width: 400px) {
-    align-items: center;
-    display: grid;
-  
-    width: 300px;
-  height: 300px;
+    width: 350px;
+    height: 350px;
   }
 
+  @media (max-width: 360px) {
+    width: 320px;
+    height: 320px;
+  }
 `;
 
 export const HomeArea = styled.div`
@@ -202,67 +193,75 @@ export const BarGreen = styled.div`
   margin-left: -150px;
   position: absolute;
   transform: rotate(-20deg);
-  background: rgb(105,89,205);
-background: linear-gradient(90deg, rgba(105,89,205,1) 43%, rgba(0,212,255,1) 100%);
+  background: rgb(105, 89, 205);
+  background: linear-gradient(
+    90deg,
+    rgba(105, 89, 205, 1) 43%,
+    rgba(0, 212, 255, 1) 100%
+  );
 
-@media (min-width: 1700px) {
-  width: 2000px;
+  @media (min-width: 1700px) {
+    width: 2000px;
   }
 
   @media (max-width: 1320px) {
-  width: 1300px;
+    width: 1300px;
   }
 
   @media (max-width: 1200px) {
-  width: 1200px;
+    width: 1200px;
   }
 
   @media (max-width: 1100px) {
-  width: 1000px;
-  margin-top: 500px;
+    width: 1000px;
+    margin-top: 500px;
   }
 
   @media (max-width: 900px) {
-  width: 800px;
+    width: 800px;
   }
 
   @media (max-width: 720px) {
-  width: 600px;
-  
+    width: 600px;
   }
 
   @media (max-width: 520px) {
-  width: 500px;
-  height: 150px;
+    width: 500px;
+    height: 150px;
   }
 `;
-
 
 export const BarFooter = styled.div`
   width: 1800px;
   height: 150px;
-position: relative;
-  left:0;
+  position: relative;
+  left: 0;
   margin-top: 0px;
   display: flex;
   flex-direction: column-reverse;
-opacity: 0.5;
+  opacity: 0.5;
   transform: rotate(-170deg);
-  background: rgb(105,89,205);
-background: linear-gradient(90deg, rgba(105,89,205,1) 43%, rgba(0,212,255,1) 100%);
+  background: rgb(105, 89, 205);
+  background: linear-gradient(
+    90deg,
+    rgba(105, 89, 205, 1) 43%,
+    rgba(0, 212, 255, 1) 100%
+  );
 `;
-
-
 
 export const AreaTitle = styled.div`
   width: auto;
   display: flex;
   margin-bottom: 80px;
   flex-direction: row-reverse;
+
+  @media (max-width: 400px) {
+    margin-right: 30px;
+  }
 `;
 
 export const AboutArea = styled.div`
-  height:100%;
+  height: 100%;
   align-items: center;
   justify-content: center;
   background-color: #121214;
@@ -270,11 +269,7 @@ export const AboutArea = styled.div`
   @media (max-width: 1300px) {
     padding: 15px;
     display: grid;
-   
   }
-
- 
-
 `;
 
 export const ContainerLinks = styled.div`
@@ -296,6 +291,14 @@ export const AreaCards = styled.div`
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
+
+  @media (max-width: 600px) {
+    padding: 30px;
+  }
+
+    @media (max-width: 400px) {
+    padding: 50px;
+  }
 `;
 
 export const CardTecnhology = styled.div`
@@ -311,14 +314,7 @@ export const CardTecnhology = styled.div`
   transition: all 0.5s;
 
   @media (max-width: 600px) {
-    width: 195px;
-  }
-
-  @media (max-width: 500px) {
-    width: 160px;
-
- 
-  
+    width: 100%;
   }
 
   :hover {
@@ -339,7 +335,6 @@ export const ExperiencesArea = styled.div`
   @media (max-width: 1300px) {
     padding: 15px;
   }
-
 `;
 
 export const Profile = styled.div`
@@ -349,7 +344,9 @@ export const Profile = styled.div`
   margin-top: 40px;
 
   @media (max-width: 600px) {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
+    height: 400px;
+    width: 90%;
   }
 
   @media (max-width: 1300px) {
@@ -369,10 +366,17 @@ export const Contact = styled.div`
   @media (max-width: 1300px) {
     padding: 15px;
   }
-  
 `;
 
 export const Description = styled.p`
   color: #c8c8c8;
   font-size: 20px;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+
+  @media (max-width: 400px) {
+    width: 90%;
+  }
 `;

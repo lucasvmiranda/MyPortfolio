@@ -1,5 +1,5 @@
 import React from "react";
-import StarfieldAnimation from 'react-starfield-animation'
+import StarfieldAnimation from "react-starfield-animation";
 
 import {
   FaDev,
@@ -45,11 +45,10 @@ import {
   TitleCard,
   Contact,
   MyName,
-
   ContainerLinks,
   BarGreen,
   HomeArea,
-  AreaDescription
+  AreaDescription,
 } from "./styles";
 import Header from "../../components/Header";
 import Whatsapp from "../../components/Whatsapp";
@@ -57,73 +56,61 @@ import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
-    
     <>
-
-    
       <Container>
-      <Header
-            home="#home"
-            about="#about"
-            experience="#experience"
-            person="#person"
-            contact="#contact"
-          />
-      <StarfieldAnimation
-        style={{
-          position: 'absolute',
-          width: '100%',
-          height: '100%',
-          zIndex: 999,
-        }}
-      />
-      <BarGreen/>
+        <Header
+          home="#home"
+          about="#about"
+          experience="#experience"
+          person="#person"
+          contact="#contact"
+        />
+        <StarfieldAnimation
+          style={{
+            position: "absolute",
+            width: "100%",
+            height: "100%",
+            zIndex: 999,
+          }}
+        />
+        <BarGreen />
         <ContainerBackground>
-         
-          
-    
-          <Content>
+          <Content id="home">
             <InitArea>
-              
-              <MyPhotoContainer/>
-             
-              
+              <MyPhotoContainer />
               <ContainertextInit>
                 <Title>Olá, sou o </Title>
                 <MyName>Lucas Miranda</MyName>
-                
-<ContainerLinks>
-
-    <SubTitle>    Apaixonado por tecnologia,
-               formado em Análise e Desenvolvimento de Sistemas, tenho facilidade em
-                trabalhar em equipe, pair programming e code review fazem parte
-                de meu cotidiano.</SubTitle>
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/in/lucasvmiranda/"
-                >
-                  {" "}
-                  <FaLinkedin size={55} />
-                </a>
-                <a target="_blank" href="https://github.com/lucasvmiranda">
-                  {" "}
-                  <FaGithubSquare size={55} />
-                </a>
+                <ContainerLinks>
+                  <SubTitle>
+                    {" "}
+                    Apaixonado por tecnologia, formado em Análise e
+                    Desenvolvimento de Sistemas, tenho facilidade em trabalhar
+                    em equipe, pair programming e code review fazem parte de meu
+                    cotidiano.
+                  </SubTitle>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/lucasvmiranda/"
+                  >
+                    {" "}
+                    <FaLinkedin size={55} />
+                  </a>
+                  <a target="_blank" href="https://github.com/lucasvmiranda">
+                    {" "}
+                    <FaGithubSquare size={55} />
+                  </a>
                 </ContainerLinks>
               </ContainertextInit>
-          
             </InitArea>
-            </Content>
-            <AreaDescription>
+          </Content>
+          <AreaDescription>
+            <Content></Content>
+          </AreaDescription>
+          <AboutArea>
             <Content>
-          
-                </Content>
-                </AreaDescription>
-            
-            <AboutArea >
-            <Content>
-              <AreaTitle  id="about">
-                <Title >TECNOLOGIAS</Title>
+              <AreaTitle id="about">
+                <Title>TECNOLOGIAS</Title>
               </AreaTitle>
               <Description
                 style={{ alignItems: "center", justifyContent: "center" }}
@@ -151,18 +138,18 @@ const Home = () => {
                   <CardTecnhology>
                     {" "}
                     <FaReact size={35} />
-                    <TitleCard> React.js/React Native</TitleCard>
+                    <TitleCard> React.js</TitleCard>
                   </CardTecnhology>
 
                   <CardTecnhology>
                     {" "}
                     <SiRedux size={35} />
-                    <TitleCard> Redux</TitleCard>
+                    <TitleCard>React Native</TitleCard>
                   </CardTecnhology>
                   <CardTecnhology>
                     {" "}
                     <SiReduxsaga size={35} />
-                    <TitleCard> Redux Saga</TitleCard>
+                    <TitleCard>Redux</TitleCard>
                   </CardTecnhology>
                   <CardTecnhology>
                     {" "}
@@ -181,24 +168,35 @@ const Home = () => {
                   </CardTecnhology>
                 </AreaCards>
               </Description>
-              </Content>
-            </AboutArea>
-            <Content id="home">
+            </Content>
+          </AboutArea>
+          <Content>
             <ExperiencesArea>
               <AreaTitle style={{ flexDirection: "row", marginTop: 100 }}>
-                <Title id="experience" >
-                  EXPERIÊNCIAS
-                </Title>
+                <Title id="experience">EXPERIÊNCIAS</Title>
               </AreaTitle>
               <Description>
                 <VerticalTimeline style={{ position: "relative", zIndex: 1 }}>
+                  <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ color: "#6959CD" }}
+                    date="2022 - Presente"
+                    iconStyle={{ background: "#6959CD", color: "#fff" }}
+                    icon={<FaDev />}
+                  >
+                    <h3 className="vertical-timeline-element-title">C34web </h3>
+                    <h4 className="vertical-timeline-element-subtitle">
+                      Co-founder e Desenvolvedor Full-Stack
+                    </h4>
+                    <p>Aplicações Web e aplicações Mobile.</p>
+                  </VerticalTimelineElement>
                   <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: "#6959CD", color: "#fff" }}
                     contentArrowStyle={{
                       borderRight: "7px solid  #6959CD",
                     }}
-                    date="2022 - presente"
+                    date="2022 - 2022"
                     iconStyle={{ background: "#6959CD", color: "#fff" }}
                     icon={<FaDev />}
                   >
@@ -208,7 +206,10 @@ const Home = () => {
                     <h4 className="vertical-timeline-element-subtitle">
                       Desenvolvedor Front-end - Remoto
                     </h4>
-                    <p>Aplicação Web com TypeScript, React, Styled-Componentes, Redux e Redux Saga.</p>
+                    <p>
+                      Aplicação Web com TypeScript, React, Styled-Componentes,
+                      Redux e Redux Saga.
+                    </p>
                   </VerticalTimelineElement>
                   <VerticalTimelineElement
                     className="vertical-timeline-element--work"
@@ -224,8 +225,9 @@ const Home = () => {
                       Desenvolvedor Full-Stack - Remoto
                     </h4>
                     <p>
-                      Aplicação Web com TypeScript,React.js, aplicação Mobile com React
-                      Native, Back-end com Node.js e deploy de aplicações.
+                      Aplicação Web com TypeScript,React.js, aplicação Mobile
+                      com React Native, Back-end com Node.js e deploy de
+                      aplicações.
                     </p>
                   </VerticalTimelineElement>
 
@@ -248,11 +250,8 @@ const Home = () => {
                 </VerticalTimeline>
               </Description>
             </ExperiencesArea>
-        
             <Profile>
-              
               <AreaTitle>
-              
                 <Title id="person">PERFIL PESSOAL</Title>
               </AreaTitle>
               <Description style={{ textAlign: "justify" }}>
@@ -266,12 +265,9 @@ const Home = () => {
               </Description>
             </Profile>
             <AreaTitle style={{ flexDirection: "row" }}>
-              <Title id="contact" >
-                CONTATO
-              </Title>
+              <Title id="contact">CONTATO</Title>
             </AreaTitle>
             <Contact>
-              
               <Description style={{ display: "flex", alignItems: "center" }}>
                 <MdEmail size={40} style={{ marginRight: 10 }} />{" "}
                 lucasvmirandadev@gmail.com

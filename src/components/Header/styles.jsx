@@ -7,12 +7,10 @@ export const Container = styled.header`
   background: linear-gradient(63deg, rgba(0,212,255,0.25253851540616246) 0%, rgba(105,89,205,1) 65%);
   padding: 20px 0px;
   align-items: center;  
-
   display: flex;
-
   justify-content: center;
   position: fixed;
-  z-index: 9999999;
+  z-index: 9999;
   width: 100vw;
 
   @media (max-width: 900px) {
@@ -25,19 +23,17 @@ export const Content = styled.div`
   width: 100vw;
   max-width: 1250px;
   display: flex;
-  z-index: 99999;
-
   justify-content: space-between;
   flex-direction: row-reverse;;
 `;
 
 export const AreaButtons = styled.div`
   width: 40%;
-
-margin-right:50px;
+  margin-right:50px;
   align-items: flex-end;
   display: flex;
   justify-content: space-between;
+
   @media (max-width: 830px) {
     display: none;
   }
@@ -47,7 +43,6 @@ export const ButtonMenu = styled.div`
   height: 20px;
   font-size: 14px;
   color: white;
-
   display: grid;
   justify-content: center;
   text-align: center;
@@ -90,7 +85,7 @@ export const SideMenu = styled.div`
   );
   position: absolute;
   right: 0;
-  z-index: 999;
+  z-index: 9999;
   animation: 1s ${fadeAnimation};
 
   @media (min-width: 830px) {
@@ -104,7 +99,7 @@ export const BackgroundSideMenu = styled.div`
   flex: 1;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
-  z-index: 99;
+  z-index: 99999;
   top: 0;
 
   @media (min-width: 830px) {

@@ -3,11 +3,9 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -31,14 +29,14 @@ a:hover {
 
 html {
   scroll-behavior: smooth !important;
+  overflow-x: hidden;
 }
 
 body {
   scroll-behavior: smooth !important;
   margin: 0;
   font-family: Roboto, Helvetica, sans-serif;
-
-
+  overflow-x: hidden;
 }
 
 h1 {

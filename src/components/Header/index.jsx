@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 import * as S from "./styles";
-
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineCloseSquare } from "react-icons/ai";
 
-
-
 function Header() {
   const [open, setOpen] = useState(false);
-
 
   const Links = ({ margin }) => (
     <>
@@ -37,12 +33,9 @@ function Header() {
           <GiHamburgerMenu size={24} color="white" />
         </S.MenuHamburguerButton>
         <S.Content>
-          
-
           <S.AreaButtons>
             <Links margin={0} />
           </S.AreaButtons>
-       
         </S.Content>
       </S.Container>
       {open ? (
@@ -53,7 +46,6 @@ function Header() {
             </S.CloseButtonMenu>
             <S.AreaButtonsHamburguerMenu>
               <Links margin={20} />
-              
             </S.AreaButtonsHamburguerMenu>
           </S.SideMenu>
         </S.BackgroundSideMenu>

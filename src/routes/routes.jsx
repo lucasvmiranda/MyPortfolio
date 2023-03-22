@@ -1,6 +1,4 @@
-import react from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-
 import Home from "../pages/Home";
 
 const RoutesApp = () => {
@@ -8,7 +6,6 @@ const RoutesApp = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} exact />
-        {/* <Route component = { Sobre } path="/about" /> */}
       </Routes>
     </BrowserRouter>
   );
