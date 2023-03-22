@@ -255,13 +255,11 @@ const Home = () => {
                 <Title id="person">PERFIL PESSOAL</Title>
               </AreaTitle>
               <Description style={{ textAlign: "justify" }}>
-                Nascido em São Paulo, apaixonado por tecnologia desde sempre,
-                carros dos anos 90 e músicas emo, uma pessoa bem nostalgica
-                diria, no meu tempo livre, gosto de estar perto de amigos e da
-                família, formado em Análise e Desenvolvimento de Sistemas, atuo
-                como programador a cerca de 1 ano e meio, tenho facilidade em
-                trabalhar em equipe, pair programming e code review fazem parte
-                de meu cotidiano.
+              Desenvolvedor nascido em São Paulo apaixonado em computadores e carros.  Além disso, no meu tempo livre, gosto de passar o tempo com amigos e familiares, seja assistindo filmes, jogando jogos ou simplesmente conversando.
+
+Sou um graduado em Análise e Desenvolvimento de Sistemas e tenho experiência em desenvolvimento de software, incluindo o desenvolvimento de aplicativos mobile e web. Estou sempre buscando aprender novas tecnologias para aprimorar minhas habilidades.
+
+Sou uma pessoa pró-ativa e sempre busco maneiras de melhorar processos e solucionar problemas com soluções inovadoras. Além disso, tenho habilidades de comunicação sólidas e trabalho bem em equipe.
               </Description>
             </Profile>
             <AreaTitle style={{ flexDirection: "row" }}>
